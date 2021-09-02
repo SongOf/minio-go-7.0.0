@@ -26,7 +26,7 @@ func TestFileUploader(t *testing.T) {
 	}
 
 	// Make a new bucket called mymusic.
-	bucketName := "mytest"
+	bucketName := "mytes2"
 	location := "bupt-815"
 
 	err = minioClient.MakeBucket(ctx, bucketName, minio.MakeBucketOptions{Region: location})
@@ -43,8 +43,8 @@ func TestFileUploader(t *testing.T) {
 	}
 
 	// Upload the zip file
-	objectName := "640MB.txt"
-	filePath := "/Users/lisongsong/Documents/640MB.txt"
+	objectName := "1KB.txt"
+	filePath := "/Users/lisongsong/Documents/1KB.txt"
 	contentType := "application/octet-stream"
 
 	// Upload the zip file with FPutObject
